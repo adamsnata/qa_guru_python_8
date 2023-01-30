@@ -8,7 +8,9 @@ from utils import attach
 
 @allure.title('Fill form test')
 def test_final():
-
+    print('\n************************************************************')
+    print('\ntest final')
+    print('\n************************************************************')
     ilja = User(
         name='Andrew',
         last_name='Domnin',
