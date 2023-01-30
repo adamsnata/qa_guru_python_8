@@ -6,7 +6,7 @@ from utils import attach
 
 
 
-@allure.title('Fill form test')
+
 def test_final():
     print('\n************************************************************')
     print('\ntest final')
@@ -25,7 +25,7 @@ def test_final():
         state='NCR',
         sity='Delhi'
     )
-    with allure.step('Fill'):
+    with allure.step('Init Form'):
         practice_form.fill(ilja)
     with allure.step('Test correct fill'):
         practice_form.assert_f(ilja)
