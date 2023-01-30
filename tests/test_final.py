@@ -1,3 +1,5 @@
+from allure_commons.types import Severity
+
 from classes.user import User
 from pages.practice_form import practice_form
 import allure
@@ -6,7 +8,12 @@ from utils import attach
 
 
 
-
+@allure.tag("UI test")
+@allure.severity(Severity.CRITICAL)
+@allure.story("Registration form")
+@allure.feature("Forms")
+@allure.label("owner", "OAO")
+@allure.description("Verify registration process is successful")
 def test_final():
     print('\n************************************************************')
     print('\ntest final')
