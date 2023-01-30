@@ -9,7 +9,6 @@ from selene.support.shared import browser
 def open_page():
     browser.open('/automation-practice-form')
     ads = browser.all('[id^=google_ads_][id$=container__]')
-    ads = browser.all('[id^=google_ads_][id$=container__]')
     ads.with_(timeout=10).should(have.size_greater_than_or_equal(3)).perform(
         command.js.remove)
     google_uploadeds = browser.all("[id^=google_uploaded_]")
