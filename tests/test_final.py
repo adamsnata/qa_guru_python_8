@@ -6,7 +6,9 @@ import allure
 from selene.support.shared import browser
 from utils import attach
 
-
+def test_final2():
+    with allure.step('Init Form'):
+        print('\ntest final')
 
 @allure.tag("UI test")
 @allure.severity(Severity.CRITICAL)
